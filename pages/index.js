@@ -1,6 +1,8 @@
 import Link from "next/link"
 import { useRouter } from "next/router";
 import { useState } from "react";
+import Header from "@/components/shared/header";
+import Footer from "@/components/shared/footer";
 
 export default function Homepage() {
   const router = useRouter();
@@ -9,11 +11,13 @@ export default function Homepage() {
     alert("you clicked the button!");
 
     //  make API call
+
     router.push("/books");
     // navigate to book page
   }
   return (
-    <div className="w-full py-10 bg-blue-100">Hello
+    <div className="w-full ">
+      <Header name= "Home"/>
 
     <button 
       className="bg-blue-500 px-2 py-1 rounded"
@@ -23,11 +27,7 @@ export default function Homepage() {
       click me!!!
     </button>
 
-    <div>
-      <Link href= "/books">
-        Go to books page 
-      </Link>
+    <Footer href="/books" title="Books page"/>
     </div>
-  </div>
   )
 }
