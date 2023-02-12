@@ -3,7 +3,7 @@ export default function handler(req, res) {
     {        
 
         title: "Why You?",
-        author: "James Reed?",
+        author: "James Reed",
 
     },
     {
