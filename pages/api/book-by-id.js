@@ -8,14 +8,16 @@ export default function handler(req, res)
         Id:"1",
         title: "Why You?",
         author: "James Reed",
-        imgUrl: "/assets/book1.jpg"
+        imgUrl: "/assets/book1.jpg",
+        linkToPurchase: "https://amzn.eu/d/eHlVNfm"
 
     },
     {
         Id:"2",
         title:  "Parenting a child with Autism",
         author: "Richard Bass",
-        imgUrl: "/assets/book2.jpg"
+        imgUrl: "/assets/book2.jpg",
+        linkToPurchase: "https://amzn.eu/d/9lrvMCK"
 
 
     },
@@ -23,7 +25,11 @@ export default function handler(req, res)
         Id:"3",
         title: "Emotional Intelligence",
         author: "Daniel Goleman",
-        imgUrl: "/assets/book3.jpg"
+        imgUrl: "/assets/book3.jpg",
+        linkToPurchase: "https://amzn.eu/d/jgCllRp"
+
+
+    
     }];
 
     const foundBook = Books.find((book) => {

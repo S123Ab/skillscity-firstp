@@ -3,6 +3,7 @@ import Hero from "@/components/home/hero";
 import Header from "@/components/shared/header";
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react";
+import Content from "@/components/shared/content";
 
 export default function SingleBook() {
     const router = useRouter();
@@ -42,11 +43,22 @@ export default function SingleBook() {
 
             />
 
+            <Content>
+                <div className="w-full flex flex-col">
+
+                    <a href={book.linkToPurchase} target="_blank">
+                        Buy on Amazon
+                    </a>
+                </div>
+            </Content>
+
             <Footer 
                 title="Next book"
                 href={`/single-book/${+book.Id + 1}`}
             
             />
+
+           
 
         </div>
     )
