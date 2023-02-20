@@ -45,6 +45,7 @@ export default function Homepage() {
     </div>
 </div>
     </Content>
+    
     <Footer href="/books" title="Books page"/>
   </div>
   )
