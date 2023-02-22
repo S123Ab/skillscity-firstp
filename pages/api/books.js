@@ -1,6 +1,8 @@
-export default function handler(req, res) 
-{
-    const dbConnection = process.env.POSTGRES_CONNECTION_STRING;
+import sql from "@/utils/postgres";
+
+export default function handler(req, res) {
+    
+        
 
     const Books = [
     {        
