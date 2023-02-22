@@ -1,5 +1,6 @@
 export default function handler(req, res) 
 {
+    const dbConnection = process.env.POSTGRES_CONNECTION_STRING;
 
     const Books = [
     {        
