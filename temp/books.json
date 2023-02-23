@@ -1,0 +1,23 @@
+[        
+    {   "Id":"1",
+        "title": "Why You?",
+        "author": "James Reed",
+        "img_url": "/assets/book1.jpg"
+
+    },
+    {
+        "Id":"2",
+        "title":  "Parenting a child with Autism",
+        "author": "Richard Bass",
+        "img_url": "/assets/book2.jpg"
+
+
+    },
+    {
+        "Id":"3",
+        "title": "Emotional Intelligence",
+        "author": "Daniel Goleman",
+        "img_url": "/assets/book3.jpg"
+    }
+    
+]
